@@ -1,0 +1,12 @@
+[package]
+name = "test_parity_lib"
+version = "0.1.0"
+authors = ["Sviatoslav Bulbakha <mail@ssbb.me>"]
+
+[dependencies]
+ethcore-bigint = { git = "https://github.com/paritytech/parity.git" }
+
+[lib]
+name = "test_parity"
+path = "src/lib.rs"
+crate-type = ["dylib"]
